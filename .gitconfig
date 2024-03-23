@@ -1,0 +1,9 @@
+[user]
+	name = Miguel Jara
+	email = 95490111+Miguel-A-Jara@users.noreply.github.com
+
+[init]
+	defaultBranch = main
+
+[push]
+	autoSetupRemote = true
