@@ -21,6 +21,10 @@ zsh-autosuggestions
 asdf
 )
 
+export EDITOR=code
+export GIT_EDITOR=$EDITOR
+export SAVEHIST=100000 # 100.000
+
 # fnm (Fast Node Manager)
 export PATH="~/.local/share/fnm:$PATH"
 eval "`fnm env`"
@@ -35,14 +39,22 @@ export PATH=$PATH:"~/fvm/default/bin"
 # Android Home
 export ANDROID_HOME="$HOME/Library/Android/Sdk"
 
+# Aliases
+alias e="$EDITOR"
+alias c="clear"
+alias r="source $HOME/.zshrc"
+alias x=exit
 
+alias lg="lazygit"
+alias gc="git clone"
+alias gs="git status"
+alias gS="git switch"
+alias gC="git checkout"
+alias gp="git pull"
+alias gP="git push"
+alias gd="git diff"
+alias ga="git add"
 
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias s="nr start"
+alias d="nr dev"
+alias b="nr build"
