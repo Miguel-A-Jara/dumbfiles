@@ -38,6 +38,8 @@ export PATH=$PATH:"~/fvm/default/bin"
 
 # Android Home
 export ANDROID_HOME="$HOME/Library/Android/Sdk"
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Aliases
 alias e="$EDITOR"
