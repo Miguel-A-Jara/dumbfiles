@@ -62,6 +62,8 @@ alias d="nr dev"
 alias b="nr build"
 alias ts="nr tsc"
 
+alias i="ni"
+
 alias dcu="docker compose up"
 alias dcd="docker compose down"
 alias dsp="docker system prune --all --volumes"
