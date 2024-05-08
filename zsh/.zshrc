@@ -26,15 +26,15 @@ export GIT_EDITOR=$EDITOR
 export SAVEHIST=100000 # 100.000
 
 # fnm (Fast Node Manager)
-export PATH="~/.local/share/fnm:$PATH"
+export PATH="$HOME/.local/share/fnm:$PATH"
 eval "`fnm env`"
 eval "$(fnm env --use-on-cd)" # Update Node Version on CD when there's a .nvmrc file
 
 # fvm (Flutter Version Manager)
-export PATH=$PATH:"~/fvm/default/bin"
+export PATH=$PATH:"$HOME/fvm/default/bin"
 
 # ASDF Java Home Setup
-. ~/.asdf/plugins/java/set-java-home.zsh
+. "$HOME/.asdf/plugins/java/set-java-home.zsh"
 
 # Android Home
 export ANDROID_HOME="$HOME/Library/Android/Sdk"
