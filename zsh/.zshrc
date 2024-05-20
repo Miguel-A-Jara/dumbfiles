@@ -13,7 +13,6 @@ COMPLETION_WAITING_DOTS="true"          # show red dots while waiting for autoco
 plugins=(
 git
 zsh-autosuggestions
-asdf
 )
 
 export EDITOR=code
@@ -28,9 +27,6 @@ eval "$(fnm env --use-on-cd)" # Update Node Version on CD when there's a .nvmrc 
 # fvm (Flutter Version Manager)
 export PATH=$PATH:"$HOME/fvm/default/bin"
 
-# ASDF Java Home Setup
-. "$HOME/.asdf/plugins/java/set-java-home.zsh"
-
 # Android Home
 export ANDROID_HOME="$HOME/Library/Android/Sdk"
 export PATH=$PATH:$ANDROID_HOME/emulator
@@ -41,6 +37,8 @@ alias e="$EDITOR"
 alias c="clear"
 alias r="source $HOME/.zshrc"
 alias x=exit
+alias rnm="rm -rf ./node_modules"
+
 
 alias lg="lazygit"
 alias gc="git clone"
