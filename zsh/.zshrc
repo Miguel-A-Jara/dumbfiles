@@ -38,6 +38,7 @@ alias c="clear"
 alias r="source $HOME/.zshrc"
 alias x=exit
 alias rnm="rm -rf ./node_modules"
+alias path="echo $PATH | tr ':' '\n'"
 
 
 alias lg="lazygit"
