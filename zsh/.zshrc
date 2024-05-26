@@ -28,7 +28,12 @@ eval "$(fnm env --use-on-cd)" # Update Node Version on CD when there's a .nvmrc 
 export PATH=$PATH:"$HOME/fvm/default/bin"
 
 # Android Home
-export ANDROID_HOME="$HOME/Library/Android/Sdk"
+if [[ $(uname) == "Darwin" ]]; then
+  export ANDROID_HOME="$HOME/Library/Android/Sdk"
+else
+  export ANDROID_HOME="$HOME/Android/Sdk"
+fi
+
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
