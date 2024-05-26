@@ -61,3 +61,7 @@ alias i="ni"
 alias dcu="docker compose up"
 alias dcd="docker compose down"
 alias dsp="docker system prune --all --volumes"
+
+# SDKMAN (For managing Java SDKs) - THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
