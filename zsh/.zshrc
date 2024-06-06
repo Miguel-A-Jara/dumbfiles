@@ -19,6 +19,10 @@ export EDITOR=code
 export GIT_EDITOR=$EDITOR
 export SAVEHIST=100000 # 100.000
 
+
+# Path to ~/.local/bin
+export PATH=$HOME/.local/bin:$PATH
+
 # fnm (Fast Node Manager)
 export PATH="$HOME/.local/share/fnm:$PATH"
 eval "`fnm env`"
@@ -34,6 +38,7 @@ else
   export ANDROID_HOME="$HOME/Android/Sdk"
 fi
 
+export ANDROID_SDK_ROOT=$ANDROID_HOME
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
@@ -70,3 +75,4 @@ alias dsp="docker system prune --all --volumes"
 # SDKMAN (For managing Java SDKs) - THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
