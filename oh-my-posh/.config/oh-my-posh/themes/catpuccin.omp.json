@@ -61,6 +61,11 @@
           "powerline_symbol": "\ue0b4",
           "template": " {{ .HEAD }}",
           "type": "git"
+        },
+        {
+          "type": "text",
+          "style": "plain",
+          "template": "\n ↳"
         }
       ],
       "type": "prompt"
