@@ -1,6 +1,11 @@
 export ZSH="$HOME/.oh-my-zsh"           # Path to your oh-my-zsh installation.
 source $ZSH/oh-my-zsh.sh                # Load zsh with oh-my-zsh
 
+# Oh My Posh prompt
+if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
+  eval "$(oh-my-posh init zsh --config "$HOME/.config/oh-my-posh/themes/catpuccin.omp.json")"
+fi
+
 zstyle ':omz:update' mode reminder      # just remind me to update when it's time
 
 # Plugins
