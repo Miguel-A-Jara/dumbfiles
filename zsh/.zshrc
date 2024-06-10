@@ -10,6 +10,11 @@ plugins=(
   zsh-autosuggestions # https://github.com/zsh-users/zsh-autosuggestions
 )
 
+# Launches TMUX on every new terminal
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux new-session -A -s main
+fi
+
 export ZSH="$HOME/.oh-my-zsh"           # Path to your oh-my-zsh installation.
 source $ZSH/oh-my-zsh.sh                # Load zsh with oh-my-zsh
 
