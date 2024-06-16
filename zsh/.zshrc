@@ -10,9 +10,10 @@ plugins=(
   zsh-autosuggestions # https://github.com/zsh-users/zsh-autosuggestions
 )
 
-# Launches TMUX on every new terminal
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  exec tmux new-session -A -s main
+# HACK: This is required for neovim to work on Fedora (as this is a manual installation, due to dnf not packaging TreeSitter nor the basic lua parsers)
+# See more (and remove when this is done): https://bugzilla.redhat.com/show_bug.cgi?id=2283574
+if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
+  export PATH="$PATH:/opt/nvim-linux64/bin"
 fi
 
 export ZSH="$HOME/.oh-my-zsh"           # Path to your oh-my-zsh installation.
@@ -76,5 +77,3 @@ alias i="ni"
 alias dcu="docker compose up"
 alias dcd="docker compose down"
 alias dsp="docker system prune --all --volumes"
-
-
