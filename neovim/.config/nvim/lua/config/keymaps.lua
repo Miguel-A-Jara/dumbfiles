@@ -11,3 +11,5 @@ map("i", "<C-h>", "<Left>")
 map("i", "<C-l>", "<Right>")
 
 map("v", "<leader>jk", "<Esc>") -- Use spacebar + "jk" in visual mode to escape
+
+map("n", "<leader>s", "<cmd>w<cr><esc>") -- Use spacebar + "s" to save
