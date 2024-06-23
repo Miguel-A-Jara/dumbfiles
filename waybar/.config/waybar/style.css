@@ -1,0 +1,77 @@
+@import "macchiato.css";
+
+* {
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "JetBrainsMono Nerd Font", sans-serif;
+}
+
+window {
+  color: @blue;
+}
+
+window#waybar {
+  background-color: transparent;
+}
+
+.modules-left {
+  padding: 5px 20px;
+  background-color: @base;
+  border: 2px solid @blue;
+  border-left: none;
+  border-radius: 0 100px 100px 0;
+}
+.modules-center {
+  padding: 5px 20px;
+  background-color: @base;
+  border: 2px solid @blue;
+  border-radius: 100px;
+}
+.modules-right {
+  padding: 5px 20px;
+  background-color: @base;
+  border: 2px solid @blue;
+  border-right: none;
+  border-radius: 100px 0 0 100px;
+}
+
+#workspaces button {
+  background-color: @crust;
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: all 0.5s ease;
+}
+
+#workspaces button:hover {
+  box-shadow: none; /* Remove predefined box-shadow */
+  text-shadow: none; /* Remove predefined text-shadow */
+  background: none; /* Remove predefined background color (white) */
+  background-color: @crust;
+}
+
+#workspaces button.active {
+  background-color: @blue;
+}
+
+#window {
+  border-radius: 100%;
+  background-color: @blue;
+}
+
+#pulseaudio-slider slider:hover {
+  border: none;
+  background-image: none;
+  box-shadow: none;
+  background-color: @blue;
+}
+
+#pulseaudio-slider trough {
+  min-width: 100px;
+  min-height: 5px;
+  background-color: @crust;
+}
+
+#pulseaudio-slider highlight {
+  background-color: @blue;
+}

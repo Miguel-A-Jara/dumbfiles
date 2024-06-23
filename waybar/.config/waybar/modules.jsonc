@@ -1,0 +1,67 @@
+{
+  // Workspaces
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "on-click": "activate",
+  },
+
+  // Audio slider
+  "pulseaudio/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "horizontal",
+  },
+
+  // Audio
+  "mpris": {
+    "interval": 1,
+    "max-length": 50,
+    "format": "[{position}|{length}] | {status_icon} {title}",
+    "status-icons": {
+      "playing": "",
+      "paused": "",
+      "stopped": "",
+    },
+  },
+
+  // Clock
+  "clock": {
+    "interval": 1,
+    "tooltip": true,
+    "format": "  {:%H:%M:%S}",
+    "on-click": "gnome-calendar",
+  },
+
+  "clock#2": {
+    "interval": 1,
+    "tooltip": true,
+    "format": "󰃭 {:%A %d, %Y}",
+    "on-click": "gnome-calendar",
+  },
+
+  // Network
+  "network": {
+    "format-wifi": "{signalStrength}%  ",
+    "on-click": "kitty -e 'nmtui'",
+  },
+
+  // Memory
+  "memory": {
+    "format": "RAM: {percentage}%",
+    "on-click": "kitty -e 'htop'",
+  },
+
+  // CPU
+  "cpu": {
+    "format": "CPU: {usage}%",
+    "on-click": "kitty -e 'htop'",
+  },
+
+  // Logout Button
+  "custom/logout": {
+    "format": " ",
+    "tooltip": false,
+    "on-click": "wlogout",
+  },
+}

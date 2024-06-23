@@ -1,0 +1,8 @@
+{
+  "spacing": 16,
+  "include": ["~/.config/waybar/modules.jsonc"],
+
+  "modules-left": ["hyprland/workspaces", "pulseaudio/slider", "mpris"],
+  "modules-center": ["clock", "clock#2"],
+  "modules-right": ["network", "memory", "cpu", "custom/logout"],
+}
