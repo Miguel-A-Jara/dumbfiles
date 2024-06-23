@@ -1,0 +1,15 @@
+configuration {
+  modes: "window,drun";
+  show-icons: true;
+  sidebar-mode: true;
+}
+
+@theme "./theme.rasi"
+
+* {
+  font: "JetBrainsMono Nerd Font 15";
+}
+
+window {
+    height: 480;
+}
