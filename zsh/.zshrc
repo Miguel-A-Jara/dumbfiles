@@ -51,3 +51,10 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 # Aliases
 source "$HOME/.aliases"
+
+# bun completions
+[ -s "/home/fedguel/.bun/_bun" ] && source "/home/fedguel/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
