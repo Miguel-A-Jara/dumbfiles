@@ -26,11 +26,6 @@ export SAVEHIST=100000 # 100.000
 # Path to ~/.local/bin
 export PATH=$HOME/.local/bin:$PATH
 
-# fnm (Fast Node Manager)
-export PATH="$HOME/.local/share/fnm:$PATH"
-eval "`fnm env`"
-eval "$(fnm env --use-on-cd)" # Update Node Version on CD when there's a .nvmrc file
-
 # fvm (Flutter Version Manager)
 export PATH=$PATH:"$HOME/fvm/default/bin"
 
@@ -44,10 +39,6 @@ fi
 export ANDROID_SDK_ROOT=$ANDROID_HOME
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
-
-# SDKMAN (For managing Java SDKs) - THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # Aliases
 source "$HOME/.aliases"
@@ -63,3 +54,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)"
+
+# asdf configuration
+. /opt/homebrew/opt/asdf/libexec/asdf.sh

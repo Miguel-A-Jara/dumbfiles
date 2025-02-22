@@ -21,7 +21,8 @@ alias ga="git add"
 alias s="nr start"
 alias d="nr dev"
 alias b="nr build"
-alias ts="nr tsc"
+alias ts="tsc"
+alias ncu="npx npm-check-updates -i --format group" 
 
 alias i="ni"
 
