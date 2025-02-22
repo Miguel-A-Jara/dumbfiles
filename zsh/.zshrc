@@ -50,10 +50,7 @@ source "$HOME/.aliases"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# Python (Pyenv)
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - zsh)"
-
 # asdf configuration
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
+export ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY=latest_installed # https://github.com/asdf-vm/asdf-nodejs?tab=readme-ov-file#partial-and-codename-versions
+
