@@ -51,6 +51,7 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 # asdf configuration
+export JAVA_HOME=$(asdf where java) # Sets $JAVA_HOME to where asdf's java is
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 export ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY=latest_installed # https://github.com/asdf-vm/asdf-nodejs?tab=readme-ov-file#partial-and-codename-versions
 
