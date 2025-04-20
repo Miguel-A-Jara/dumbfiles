@@ -17,6 +17,12 @@ alias gP="git push"
 alias gd="git diff"
 alias ga="git add"
 
+if [[ $(uname) == "Darwin" ]]; then
+  alias gmte='open "$(git remote get-url origin | sed -e "s/:/\//" -e "s/git@/https:\/\//")"'
+else
+  alias gmte='xdg-open "$(git remote get-url origin | sed -e "s/:/\//" -e "s/git@/https:\/\//" -e "s/\.git$//")"'
+fi
+
 # Development
 alias s="nr start"
 alias d="nr dev"
