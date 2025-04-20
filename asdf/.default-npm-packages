@@ -1,3 +1,4 @@
 @antfu/ni@latest
 yarn@1.x
 @nestjs/cli@latest
+eas-cli@latest
