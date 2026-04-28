@@ -2,3 +2,4 @@
 yarn@1.x
 @nestjs/cli@latest
 eas-cli@latest
+pnpm@latest
