@@ -40,6 +40,9 @@ export ANDROID_SDK_ROOT=$ANDROID_HOME
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
+# Env vars (gitignored, put actual values here)
+source "$HOME/.env"
+
 # Aliases
 source "$HOME/.aliases"
 
