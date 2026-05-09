@@ -4,3 +4,4 @@ yarn@1.x
 eas-cli@latest
 pnpm@latest
 opencode-ai@latest
+deno@latest
