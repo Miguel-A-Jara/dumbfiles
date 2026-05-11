@@ -5,3 +5,4 @@ eas-cli@latest
 pnpm@latest
 opencode-ai@latest
 deno@latest
+netlify-cli@latest
